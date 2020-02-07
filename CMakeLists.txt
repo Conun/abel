@@ -39,3 +39,5 @@ install(DIRECTORY ${PROJECT_SOURCE_DIR}/abel
         FILES_MATCHING
         PATTERN "*.h"
         PATTERN "*.hpp")
+
+# lib
