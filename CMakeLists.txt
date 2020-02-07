@@ -33,4 +33,9 @@ if (ENABLE_TESTING)
     add_subdirectory(test)
 endif (ENABLE_TESTING)
 
-
+# add the install targets
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/abel
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+        FILES_MATCHING
+        PATTERN "*.h"
+        PATTERN "*.hpp")
